@@ -1,0 +1,16 @@
+---
+output:
+  ioslides_presentation: default
+  html_document: default
+---
+
+## Distribution of Iris Petal Length
+July 4th, 2019
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+```{r}
+plot_ly(iris, y = ~Petal.Length, color = ~Species, type="box")
+```
+
